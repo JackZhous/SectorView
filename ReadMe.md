@@ -7,7 +7,7 @@
 
 ## 效果图
 
-![demo](demo.gif)
+![demo](demo.png)
 
 ## 实现原理
 
