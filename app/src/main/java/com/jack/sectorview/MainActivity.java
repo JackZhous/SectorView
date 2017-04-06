@@ -16,13 +16,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         //模拟数据  index 0~3分别对应扇形图的 状态0~3
-        ArrayList<Integer> testData = new ArrayList<>();
-        testData.add(1511);
-        testData.add(1156);
-        testData.add(7541);
-        testData.add(5330);
+        int[] data = new int[]{1111, 2222, 7431, 5330};
 
         mSectorView = (SectorView) findViewById(R.id.sector);
-        mSectorView.setmAngelePerStatus(testData);
+        mSectorView.setmAngelePerStatus(data);
     }
 }

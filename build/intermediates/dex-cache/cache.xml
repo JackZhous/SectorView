@@ -21,21 +21,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sever1/jackzhous/workspace/SectorView/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/sever1/jackzhous/workspace/SectorView/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_aa562d4aabdd53abd2a68ead221e5a4c1400f7f2.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/sever1/jackzhous/workspace/SectorView/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
         <dex dex="/Users/sever1/jackzhous/workspace/SectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_594e5913c6b1660504285b3d1a7568914cb28bbc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sever1/jackzhous/workspace/SectorView/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/sever1/jackzhous/workspace/SectorView/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_aa562d4aabdd53abd2a68ead221e5a4c1400f7f2.jar" />
     </item>
     <item
         is-multidex="false"

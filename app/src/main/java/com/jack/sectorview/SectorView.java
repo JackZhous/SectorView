@@ -20,7 +20,7 @@ import java.util.Arrays;
 public class SectorView extends View{
     private static final String TAG = "j_sector_tag";
 
-    private Paint mPaint;
+    private Paint                       mPaint;
     private Paint                       mTextPaint;
     private int                         mViewWidth;
     private int[]                       mColorPerStatus;
@@ -46,7 +46,7 @@ public class SectorView extends View{
         mDefaultOpenColor = Color.parseColor("#CD6090");
         mDefaultLowColor = Color.parseColor("#EEDC82");
 
-        mStatusInfo = new String[]{"状态0", "状态1", "状态2", "状态3"};
+        mStatusInfo = new String[]{"失联状态", "开门状态", "正常状态", "低电状态"};
     }
 
 
@@ -103,7 +103,7 @@ public class SectorView extends View{
     }
 
 
-    public void setmAngelePerStatus(ArrayList<Integer> list){
+    public void setmAngelePerStatus(int[] list){
         cacluteAngle(list);
     }
 
@@ -111,15 +111,15 @@ public class SectorView extends View{
      * 计算每个状态量所占用的角度
      * @param list
      */
-    private void cacluteAngle(ArrayList<Integer> list){
+    private void cacluteAngle(int[] list){
         float maxNum = 0;
-        for(int i = 0; i < list.size(); i++){
-            maxNum = maxNum + list.get(i);
+        for(int i = 0; i < list.length; i++){
+            maxNum = maxNum + list[i];
         }
 
         float angle;
-        for(int i = 0; i < list.size(); i++){
-            angle = list.get(i) * 360  / maxNum;
+        for(int i = 0; i < list.length; i++){
+            angle = list[i] * 360  / maxNum;
             Log.i(TAG, "angle --- " + angle);
             //处于0~2度之间的值设置为2度  不然画不出圆弧和斜线，这里折磨多以后会导致总角度和大于360度，后面排序
             //要在减掉多余的度数
@@ -195,7 +195,7 @@ public class SectorView extends View{
             }
 
             int angleRemain = Math.abs(angle1 - angle0);
-            if(angle0 < 5 && angleRemain < 5){      //这两个加数就是调整角度差的
+            if(angle0 >0 && angle0 < 5 && angleRemain < 5){      //这两个加数就是调整角度差的
                 if(i+1 > length){
                     array[0] += angleRemain + 10;
                 }else {
@@ -225,8 +225,8 @@ public class SectorView extends View{
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
-        int viewWidth = View.MeasureSpec.getSize(widthMeasureSpec);
-        int viewHeight = View.MeasureSpec.getSize(heightMeasureSpec);
+        int viewWidth = MeasureSpec.getSize(widthMeasureSpec);
+        int viewHeight = MeasureSpec.getSize(heightMeasureSpec);
 
         mViewWidth = viewWidth;
         mCircle.x = viewWidth / 2;
