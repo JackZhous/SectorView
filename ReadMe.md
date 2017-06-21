@@ -1,5 +1,6 @@
-# 可视化数据图 - 自定义扇形饼状图
+[![](https://www.jitpack.io/v/JackZhous/SectorView.svg)](https://www.jitpack.io/#JackZhous/SectorView)
 
+# 可视化数据图 - 自定义扇形饼状图
 ## 组件特性
 
 1. 根据传入的四种数据量大小自动显示扇形的弧度大小以及弧度半径大小
@@ -8,6 +9,29 @@
 ## 效果图
 
 ![demo](demo.png)
+
+## 导入
+### step 1
+Add it in your root build.gradle at the end of repositories:
+
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://www.jitpack.io' }
+		}
+	}
+```
+
+### step 2
+Add the dependency
+
+```
+	dependencies {
+	        compile 'com.github.JackZhous:SectorView:v1.0'
+	}
+
+```
 
 ## 实现原理
 
