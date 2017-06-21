@@ -1,14 +1,13 @@
 package com.jack.sectorview;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import java.util.ArrayList;
+import com.jackzhous.lib.SectorView;
 
 public class MainActivity extends Activity {
 
-    private SectorView                  mSectorView;
+    private SectorView mSectorView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

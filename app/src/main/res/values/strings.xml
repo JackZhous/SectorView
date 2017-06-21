@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SectorView</string>
+    <string name="status1">状态一</string>
+    <string name="status2">状态二</string>
+    <string name="status3">状态三</string>
+    <string name="status4">状态四</string>
+
 </resources>

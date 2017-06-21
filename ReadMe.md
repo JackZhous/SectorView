@@ -34,18 +34,23 @@ __方法二：__
 ### 布局layout
 
 ```
-<com.jack.sectorview.SectorView
+<com.jackzhous.lib.SectorView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        app:lost_status="@color/colorLightBlue"
-        app:open_status="@color/colorPink"
-        app:normal_status="@color/colorGreen"
-        app:lowpower_status="@color/colorYellow"
+        app:status1color="@color/colorLightBlue"
+        app:status2color="@color/colorPink"
+        app:status3color="@color/colorGreen"
+        app:status4color="@color/colorYellow"
+        app:status1text="@string/status1"
+        app:status2text="@string/status2"
+        app:status3text="@string/status3"
+        app:status4text="@string/status4"
+        app:text_color="@color/colorGreen"
         android:id="@+id/sector"/>
 ```
 
-上面用了我自定义的属性，分别用以标记几个扇形图的颜色，可以自定义，也可以使用我默认的颜色
+上面用了我自定义的属性，分别用以标记几个扇形图的颜色、扇形标注的字以及字体颜色，都是必选项
 
 ### 代码java
 

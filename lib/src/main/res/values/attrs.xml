@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--四种状态的颜色值-->
+    <declare-styleable name="sector">
+        <attr name="status1color" format="color"/>
+        <attr name="status2color" format="color"/>
+        <attr name="status3color" format="color"/>
+        <attr name="status4color" format="color"/>
+        <attr name="text_color" format="color"/>
+        <attr name="status1text" format="string"/>
+        <attr name="status2text" format="string"/>
+        <attr name="status3text" format="string"/>
+        <attr name="status4text" format="string"/>
+    </declare-styleable>
+</resources>
